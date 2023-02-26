@@ -75,31 +75,31 @@ public class TV {
 	}
 	public void canalUp() {
 		if (estado==true) {
-			if (canal >=1 || canal < 120) {
-				canal=canal++;
+			if (canal >=1 && canal < 120) {
+				canal=canal+1;
 				}
 		}
 
 		}
 	public void canalDown() {
 		if(estado==true) {
-			if (canal >1 || canal <= 120 ) {
-				canal=canal--;
+			if (canal >1 && canal <= 120 ) {
+				canal=canal-1;
 			}
 		}
 
 	}
 	public void volumenUp() {
 		if (estado==true) {
-			if (volumen >=0 || volumen < 7) {
-				volumen=volumen++;
+			if (volumen >=0 && volumen < 7) {
+				volumen=volumen+1;
 				}
 		}	
 	}
 	public void volumenDown() {
 		if(estado==true) {
-			if (volumen >0 || volumen <= 7 ) {
-				volumen=volumen--;
+			if (volumen >0 && volumen <= 7 ) {
+				volumen=volumen-1;
 			}
 		}
 	}
